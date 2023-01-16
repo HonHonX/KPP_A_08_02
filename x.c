@@ -28,10 +28,10 @@ int main () {
 	
 	//Abfrage nach dem gesuchten Wochentag
 	int tag;
-	printf("Bitte geben Sie den gewünschten Wochentag ein: \n");
+	printf("\nBitte geben Sie den gewünschten Wochentag ein: ");
 	scanf("%d",&tag);
 	if (tag>0&&tag<8)
-		printf("Der %d. Tag der Woche ist der %s\n",tag,wochentage[tag-1]);
+		printf("Der %d. Tag der Woche ist der %s.\n",tag,wochentage[tag-1]);
 	else
 		printf("Die Eingabe war leider ungültig. Bitte geben Sie eine Zahl von 1-7 an.\n");
 	
