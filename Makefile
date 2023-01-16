@@ -1,4 +1,4 @@
-NAME = x
+NAME = wochentage
 
 default: $(NAME)
 
