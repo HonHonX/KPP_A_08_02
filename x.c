@@ -30,7 +30,7 @@ int main () {
 	int tag;
 	printf("Bitte geben Sie den gewünschten Wochentag ein: \n");
 	scanf("%d",&tag);
-	if (tag>0&&tag<8);
+	if (tag>0&&tag<8)
 		printf("Der %d. Tag der Woche ist der %s\n",tag,wochentage[tag-1]);
 	else
 		printf("Die Eingabe war leider ungültig. Bitte geben Sie eine Zahl von 1-7 an.\n");
