@@ -15,7 +15,24 @@ int main () {
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
 	
-	//
+	//Speichern der Wochentagen in einen Array
+	char* wochentage[7];
+	wochentage[0]= "Montag";
+	wochentage[1]= "Dienstag";
+	wochentage[2]= "Mittwoch";
+	wochentage[3]= "Donnerstag";
+	wochentage[4]= "Freitag";
+	wochentage[5]= "Samstag";
+	wochentage[6]= "Sonntag";
+	
+	//Abfrage nach dem gesuchten Wochentag
+	int tag;
+	printf("Bitte geben Sie den gewünschten Wochentag ein: \n");
+	scanf("%d",&tag);
+	if (tag>0&&tag<8);
+		printf("Der %d. Tag der Woche ist der %s\n",tag,wochentage[tag-1]);
+	else
+		printf("Die Eingabe war leider ungültig. Bitte geben Sie eine Zahl von 1-7 an.\n");
 	
 	//Ende
 	printf("\n\n");
